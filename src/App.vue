@@ -1,25 +1,26 @@
 <template>
-  <div class="main">
-    <router-link to="/">
-    to home page
-    </router-link>
-    <br/>
-    <router-link to="/info">
-    to info page
-    </router-link>
-    <br/>
-    <router-view/>
+  <div id="app">
+    <component :is= 'layout'>
+        <router-view/>
+      </component>
   </div>
 </template>
 
-// <script>
-// import HomePage from "@/pages/HomePage.vue";
-// import InfoPage from "@/pages/InfoPage.vue"
+<script>
+import MainLayout from "@/layouts/MainLayout";
+import AuthLayout from "@/layouts/AuthLayout";
 
-// export default {
-//     name: "App",
-//     components: {
-//     HomePage, InfoPage
-//     },
-//   };
-// </script>
+export default {
+  name: "App",
+  components: {
+    MainLayout,
+    AuthLayout,
+  },
+  computed: {
+    //getter переменная, которую менять нельзя, readonly, сами измен на основе переменных внутри
+    layout() {
+      return this.$route.meta?.layout || 'main-layout';
+    },
+  },
+};
+</script>

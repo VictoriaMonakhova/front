@@ -32,12 +32,20 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color:blue;
+  color:black;
+  justify-content: center;
+    align-items: center; 
 }
 @media only screen and (min-width: 1024px) {
   #main {
     display: flex;
   }
+}
+.base-card {
+  padding: 25px 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  background: #00ff7f;
+  border-radius: 8px;
 }
 .name {
   font-size: 1.25rem;
@@ -50,6 +58,7 @@ export default {
 }
 .photo > img {
   border-radius: 8px;
+  color:#00FFFF;
 }
 li {
   text-align: left;

@@ -1,0 +1,238 @@
+/* чтоб не учитывались падинги */
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: #a9ff77;
+}
+
+#app {
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-font-smothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+    text-align: center;
+    color: black;
+    padding: 10px 20px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.page-title {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+
+.page-container {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.auth-form {
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 300px;
+    padding: 32px 24px;
+}
+
+.form-field {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+    gap: 16px;
+}
+
+.form-field input {
+    border: 1px solid gray;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.submit-btn {
+    margin-top: 32px;
+    padding: 12px 34px;
+    background-color: #a9ff77;
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.auth-form .action-link {
+    margin-top: 16px;
+}
+
+.link-btn {
+    cursor: pointer;
+}
+
+.base-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.todo-item .actions {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 16;
+}
+
+.todo-item .title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.todo-item .desc {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.todo-item .checkbox {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.todo-item button {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background: #FF4500;
+    color: white;
+    border-radius: 2px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.todo-item.done {
+    opacity: 0.7;
+}
+
+.todo-item.done .title {
+    text-decoration: line-through;
+}
+
+.separator {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px 20px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-inline-start: 6px;
+}
+
+.create-todo button {
+    margin-top: 5px;
+    cursor: pointer;
+    border: 2px solid #A9A9A9;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.create-todo input {
+    margin-top: 5px;
+    border: 2px solid #A9A9A9;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.todo-item {
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.create-todo {
+    margin: 0 auto;
+    background-color: seagreen;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px 6px darkgreen;
+    max-width: 900px;
+    padding: 15px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-all {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: seagreen;
+    box-shadow: 0px 4px 6px 6px darkgreen;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-all button {
+    cursor: pointer;
+    border: 2px solid #A9A9A9;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.delete-all:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.delete-all button:hover {
+    background: red;
+    color: white;
+}
+
+.create-todo button:hover {
+    background-color: #ADFF2F;
+    box-shadow: none;
+}

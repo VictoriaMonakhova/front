@@ -1,15 +1,15 @@
 <template>
-  <div id = "main">
+  <div id = 'main'>
    <InfoCardd/>
    <FormCard/>
   </div>
 </template>
 
 <script>
-import InfoCardd from "@/components/InfoCardd.vue";
-import FormCard from "@/components/FormCard.vue"
+import InfoCardd from '@/components/InfoCardd.vue';
+import FormCard from '@/components/FormCard.vue'
   export default {
-    name: "InfoPage",
+    name: 'InfoPage',
     components: {
     InfoCardd,
     FormCard,
